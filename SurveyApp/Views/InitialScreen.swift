@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct InitialScreen: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @StateObject private var surveyViewModel: SurveyViewModel
+    
+    init(surveyViewModel: SurveyViewModel) {
+           self._surveyViewModel = StateObject(wrappedValue: surveyViewModel)
+       }
 
-#Preview {
-    InitialScreen()
+    var body: some View {
+        NavigationView {
+            VStack {
+                Spacer()
+                NavigationLink(destination: QuestionScreen(viewModel: surveyViewModel)) {
+                    Text("Start Survey")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                }
+                Spacer()
+            }
+            .navigationTitle("Survey App")
+        }
+    }
 }

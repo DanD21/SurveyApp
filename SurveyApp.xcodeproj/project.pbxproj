@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B21EB3102B26B1B9009E5F27 /* SurveyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21EB30F2B26B1B9009E5F27 /* SurveyViewModelTests.swift */; };
+		B21EB3172B276726009E5F27 /* MockSurveyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21EB3162B276726009E5F27 /* MockSurveyService.swift */; };
+		B21EB3182B278645009E5F27 /* MockSurveyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21EB3162B276726009E5F27 /* MockSurveyService.swift */; };
 		B23876762B20E77300982071 /* SurveyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23876752B20E77300982071 /* SurveyAppApp.swift */; };
-		B23876782B20E77300982071 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23876772B20E77300982071 /* ContentView.swift */; };
 		B238767A2B20E77400982071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23876792B20E77400982071 /* Assets.xcassets */; };
 		B238767E2B20E77400982071 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B238767D2B20E77400982071 /* Preview Assets.xcassets */; };
 		B23876882B20E77500982071 /* SurveyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23876872B20E77500982071 /* SurveyAppTests.swift */; };
 		B23876922B20E77500982071 /* SurveyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23876912B20E77500982071 /* SurveyAppUITests.swift */; };
 		B23876942B20E77500982071 /* SurveyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23876932B20E77500982071 /* SurveyAppUITestsLaunchTests.swift */; };
+		B23876A52B20E7F200982071 /* InitialScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23876A42B20E7F200982071 /* InitialScreen.swift */; };
+		B23876A72B20E81200982071 /* QuestionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23876A62B20E81200982071 /* QuestionScreen.swift */; };
+		B23876A92B20E82E00982071 /* SubmitResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23876A82B20E82E00982071 /* SubmitResultView.swift */; };
+		B23876AD2B20E86500982071 /* SurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23876AC2B20E86500982071 /* SurveyViewModel.swift */; };
+		B23876AF2B20E88200982071 /* SurveyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23876AE2B20E88200982071 /* SurveyService.swift */; };
+		B23876B12B20E8A000982071 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23876B02B20E8A000982071 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B21EB30F2B26B1B9009E5F27 /* SurveyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewModelTests.swift; sourceTree = "<group>"; };
+		B21EB3162B276726009E5F27 /* MockSurveyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSurveyService.swift; sourceTree = "<group>"; };
 		B23876722B20E77300982071 /* SurveyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurveyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23876752B20E77300982071 /* SurveyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAppApp.swift; sourceTree = "<group>"; };
-		B23876772B20E77300982071 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B23876792B20E77400982071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B238767B2B20E77400982071 /* SurveyApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SurveyApp.entitlements; sourceTree = "<group>"; };
 		B238767D2B20E77400982071 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +54,12 @@
 		B238768D2B20E77500982071 /* SurveyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23876912B20E77500982071 /* SurveyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAppUITests.swift; sourceTree = "<group>"; };
 		B23876932B20E77500982071 /* SurveyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B23876A42B20E7F200982071 /* InitialScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreen.swift; sourceTree = "<group>"; };
+		B23876A62B20E81200982071 /* QuestionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionScreen.swift; sourceTree = "<group>"; };
+		B23876A82B20E82E00982071 /* SubmitResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitResultView.swift; sourceTree = "<group>"; };
+		B23876AC2B20E86500982071 /* SurveyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewModel.swift; sourceTree = "<group>"; };
+		B23876AE2B20E88200982071 /* SurveyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyService.swift; sourceTree = "<group>"; };
+		B23876B02B20E8A000982071 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +110,11 @@
 		B23876742B20E77300982071 /* SurveyApp */ = {
 			isa = PBXGroup;
 			children = (
+				B23876A32B20E7C400982071 /* Views */,
+				B23876A22B20E7B900982071 /* Survey */,
+				B23876A12B20E7AC00982071 /* Network */,
+				B23876A02B20E79B00982071 /* Models */,
 				B23876752B20E77300982071 /* SurveyAppApp.swift */,
-				B23876772B20E77300982071 /* ContentView.swift */,
 				B23876792B20E77400982071 /* Assets.xcassets */,
 				B238767B2B20E77400982071 /* SurveyApp.entitlements */,
 				B238767C2B20E77400982071 /* Preview Content */,
@@ -116,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				B23876872B20E77500982071 /* SurveyAppTests.swift */,
+				B21EB30F2B26B1B9009E5F27 /* SurveyViewModelTests.swift */,
+				B21EB3162B276726009E5F27 /* MockSurveyService.swift */,
 			);
 			path = SurveyAppTests;
 			sourceTree = "<group>";
@@ -127,6 +147,40 @@
 				B23876932B20E77500982071 /* SurveyAppUITestsLaunchTests.swift */,
 			);
 			path = SurveyAppUITests;
+			sourceTree = "<group>";
+		};
+		B23876A02B20E79B00982071 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B23876B02B20E8A000982071 /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B23876A12B20E7AC00982071 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B23876AE2B20E88200982071 /* SurveyService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B23876A22B20E7B900982071 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				B23876AC2B20E86500982071 /* SurveyViewModel.swift */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
+		B23876A32B20E7C400982071 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B23876A42B20E7F200982071 /* InitialScreen.swift */,
+				B23876A62B20E81200982071 /* QuestionScreen.swift */,
+				B23876A82B20E82E00982071 /* SubmitResultView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B23876782B20E77300982071 /* ContentView.swift in Sources */,
+				B23876AD2B20E86500982071 /* SurveyViewModel.swift in Sources */,
+				B23876B12B20E8A000982071 /* Question.swift in Sources */,
+				B23876A52B20E7F200982071 /* InitialScreen.swift in Sources */,
+				B21EB3182B278645009E5F27 /* MockSurveyService.swift in Sources */,
+				B23876A92B20E82E00982071 /* SubmitResultView.swift in Sources */,
 				B23876762B20E77300982071 /* SurveyAppApp.swift in Sources */,
+				B23876A72B20E81200982071 /* QuestionScreen.swift in Sources */,
+				B23876AF2B20E88200982071 /* SurveyService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +328,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21EB3102B26B1B9009E5F27 /* SurveyViewModelTests.swift in Sources */,
 				B23876882B20E77500982071 /* SurveyAppTests.swift in Sources */,
+				B21EB3172B276726009E5F27 /* MockSurveyService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +496,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
@@ -472,7 +534,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;

@@ -10,8 +10,14 @@ import SwiftUI
 @main
 struct SurveyAppApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        #if DEBUG
+        let surveyViewModel = SurveyViewModel(surveyService: MockSurveyService())
+        #else
+        let surveyViewModel = SurveyViewModel(surveyService: SurveyService())
+        #endif
+
+        return WindowGroup {
+            InitialScreen(surveyViewModel: surveyViewModel)
         }
     }
 }

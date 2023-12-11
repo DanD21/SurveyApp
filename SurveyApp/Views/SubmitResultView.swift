@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct SubmitResultView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    let result: SubmitResult?
+    let retryAction: () -> Void
 
-#Preview {
-    SubmitResultView()
+    var body: some View {
+        VStack {
+            if let result = result {
+                if result == .success {
+                    Text("Success!")
+                        .foregroundColor(.green)
+                        .font(.title)
+                } else {
+                    HStack {
+                        Text("Failure ")
+                            .foregroundColor(.red)
+                            .font(.title)
+                        Button("Retry") {
+                            retryAction()
+                        }
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                    }
+                }
+            }
+        }
+    }
 }

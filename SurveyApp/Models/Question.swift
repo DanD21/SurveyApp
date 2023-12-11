@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Question: Codable {
+    let id: Int
+    let question: String
+}
